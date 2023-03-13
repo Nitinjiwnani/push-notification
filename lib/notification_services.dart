@@ -22,4 +22,16 @@ class NotificationServices {
       print('user deneid permission');
     }
   }
+
+  Future<String?> getDeviceToken() async {
+    String? token = await messaging.getToken();
+    return token;
+  }
+
+  void isRefreshToken() {
+    messaging.onTokenRefresh.listen((event) {
+      event.toString();
+      print('Refresh token');
+    });
+  }
 }
