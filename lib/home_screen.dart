@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:push_noti_app/notification_services.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -18,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
     super.initState();
     notificationServices.requestNotificationPermission();
     notificationServices.firebaseInit(context);
+    notificationServices.setupInteractMessage(context);
     // notificationServices.isRefreshToken();
     notificationServices.getDeviceToken().then((token) {
       print('Device Token');
@@ -27,6 +26,10 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Home Screen'),
+      ),
+    );
   }
 }

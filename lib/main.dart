@@ -6,6 +6,8 @@ import 'package:push_noti_app/home_screen.dart';
 Future<void> _firebaseMessagingBackGroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
   print(message.notification!.title.toString());
+  print(message.notification!.body.toString());
+  print(message.data.toString());
 }
 
 void main() async {
