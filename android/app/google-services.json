@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417045818495",
+    "project_id": "flutter-notifications-11a80",
+    "storage_bucket": "flutter-notifications-11a80.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417045818495:android:52f695f783d14d303ce34a",
+        "android_client_info": {
+          "package_name": "com.scoodel.flutternotifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417045818495-qtem13lp1mnoq9p7dmq30p25m5g3udvd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBSY7gZIxpVAwLElBafli_K3rFiSyTHoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417045818495-qtem13lp1mnoq9p7dmq30p25m5g3udvd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
